@@ -204,7 +204,7 @@ ifeq ($(config),release32)
   define POSTBUILDCMDS
 	@echo Running post-build commands
 	$(SILENT) echo Stripping symbols.
-	$(SILENT) $(MINGW)/bin/strip -s "$(TARGET)"
+	$(SILENT) C:/raylib/mingw/bin/strip -s "$(TARGET)"
   endef
 endif
 
@@ -367,7 +367,7 @@ ifeq ($(config),release64)
   define POSTBUILDCMDS
 	@echo Running post-build commands
 	$(SILENT) echo Stripping symbols.
-	$(SILENT) $(MINGW)/bin/strip -s "$(TARGET)"
+	$(SILENT) C:/raylib/mingw/bin/strip -s "$(TARGET)"
   endef
 endif
 
@@ -530,7 +530,7 @@ ifeq ($(config),release)
   define POSTBUILDCMDS
 	@echo Running post-build commands
 	$(SILENT) echo Stripping symbols.
-	$(SILENT) $(MINGW)/bin/strip -s "$(TARGET)"
+	$(SILENT) C:/raylib/mingw/bin/strip -s "$(TARGET)"
   endef
 endif
 
